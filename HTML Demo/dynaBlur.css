@@ -1,0 +1,8 @@
+/* transition blur css*/
+img {
+  filter: blur(3px) grayscale(1);
+  transition: all 1s ease-in-out;
+}
+img:hover{
+  filter:none;
+}

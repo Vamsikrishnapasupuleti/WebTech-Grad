@@ -1,0 +1,20 @@
+/* animation/transitions css*/
+nav li:hover {
+    animation: wiggle 20s infinite linear;
+}
+
+@keyframes wiggle {
+    0%,1%, 2% {transform: rotateZ(3deg);}
+    0.5%, 1.5%, 2.5% {transform: rotateZ(-3deg);}
+    3.5%, 6.0%, 10% {transform: scale(1) rotateZ(0deg);}
+    4.0% {transform: scale(1.05);}
+}
+details[open] {
+    animation: focusing 0.75s ease-out;
+}
+@keyframes focusing  {
+    0% {transform: translatex(100%) scale(1); filter: blur(1px);}
+    25% {transform: translatex(100%) scale(1.0);filter: blur(3px);}
+    75% {transform: scale(1.05); filter: blur(1px);}
+    90% {transform: scale(1); filter: none;}
+}

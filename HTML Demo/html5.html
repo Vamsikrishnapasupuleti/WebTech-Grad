@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--link rel="stylesheet" href="showHtml5.css" /-->
+        <!-- I'll do these dynamically as URL Params -->
+        <style>
+            /* special css*/
+        </style>
+        <script>
+            // javascript for more algorithmic functionality
+        </script>
+    </head>
+    <body>
+        <header>  <!-- this element is for navigation and Logo etc -->
+            <h1>html5 doc</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#tags">tags</a>
+                    </li>
+                    <li>
+                        <a href="#styles">styles</a>
+                    </li>
+                    <li>
+                        <a href="#transitions">transitions</a>
+                    </li>
+                    <li>
+                        <a href="#animations">animations</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="https://jimmorey.com">
+                <img src="squareDecent3.svg" width="50px"/>
+            </a>
+        </header>
+         <main> <!-- this element is content -->
+            <aside>
+                <h3>A few extras</h3> <!-- explore this after mastering basics -->
+                <p>Dynamic content created with javascript.</p>
+                <ul id="dynamic"></ul>
+            </aside>
+            <article>
+                <section id="tags">
+                    <h2>Content</h2>
+                    <p><mark>Html tags</mark> are ways of labeling/organizing web content.</p>
+                    <h3> 
+                        <a href="https://www.w3schools.com/tags/ref_byfunc.asp">basic html tags</a>
+                    </h3>
+		    <label>easy:<label> <meter min="0" max="100" low="30" high="75" optimum="20" value="20"></meter>
+                    <img src="jimFace.svg" width="200px"/>
+                    <ul>
+                        <li>text - a, p, h1, h2, h3, img, br</li>
+                        <li>visible structures - ul, ol, li, div, span</li>
+                        <li>document structures - id, html, head, body</li>
+                    </ul>
+                    <h3>
+                        <a href="https://www.semrush.com/blog/semantic-html5-guide">html5 tags</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <mark>main sections</mark>
+                            - header, main, footer
+                        </li>
+                        <li>helper sections -	article, section, nav, aside, figure (figcaption)</li>
+                        <li>doodads	- audio, video, details (summary), mark, time, progess, meter</li>
+                    </ul>
+                </section>
+                <section id="styles">
+                    <h3>Styles</h3>
+                    <p>Styling html content is a way to make your content easier/quicker/more pleasant to read and understand. 
+                    Describing font, colours, and layout occurs in a Casscading StyleSheet (CSS).</p>
+                     <ul>
+                        <li><details>  <!-- example with some code in a "details" .........................   -->
+                        <summary>CSS basic</summary>
+<pre><code>a {
+     text-decoration:none;
+ }
+ .crazy a {
+     color: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+ }</code></pre>
+ 			</details></li>                       
+ 			<li><details>  <!-- example with some code in a "details" .........................   -->
+                        <summary>font</summary>
+<pre><code>@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+h1, h2, h3{
+    font-family: Merriweather,sans;
+}
+h1::first-letter, h2::first-letter, h3::first-letter {
+    font: 200% oblique bold 'Luckiest Guy', sans;
+}</code></pre>                    
+			</details></li>
+ 		    </ul>
+                </section>
+                <section id="transitions">
+                    <h3>Transitions</h3>
+		    <label>tricky:<label> <meter min="0" max="100" low="30" high="75" optimum="20" value="80"></meter>
+                    <p>Switching styles of html elements when <mark>hover</mark>ing over elements or activating elements
+                    can direct attention to important aspects of the content of the document when desired. The switching of 
+                    style are less jarring or more effective when the transition is smooth.</p>
+                    <ul>
+                        <li>
+                            <details>   <!-- example with some code in a "details" .........................   -->
+                                <summary><mark>blur</mark> images while they are not the focus</summary>
+<pre><code>img {
+  filter: blur(3px) grayscale(1);
+  transition: all 1s ease-in-out;
+}
+img:hover{
+  filter:none;
+}</code></pre>
+                            </details>
+                        </li>
+                        <li>
+                            <details>   <!-- example with some code in a "details" .........................   -->
+                                <summary><mark>transform</mark> the size of an image while they are the focus</summary>
+<pre><code>img {
+  transform:none;
+  transition: all 1s ease-in-out;
+}
+img:hover{
+  transform: scale(1.1) rotate(5deg);
+}</code></pre>
+                            </details>
+                        </li>
+                    </ul>
+                </section>
+                <section id="animations">
+                    <h3>Animations</h3>
+		    <label>almost done:</label><progress max="100" value="80"></progress>
+
+                    <p>Simple transistions are not always the best ways to bring attention to content elements. 
+                    Animations allow for more sophistocated ways to transform html elements.</p>
+                    <ul>
+                        <li>
+                            <details>  <!-- example with some code in a "details" .........................   -->
+                                <summary>blur/slide</summary>
+<pre><code>details[open] {
+    animation: focusing 0.75s ease-out;
+}
+@keyframes focusing  {
+    0% {transform: translatex(100%) scale(1); filter: blur(1px);}
+    25% {transform: translatex(100%) scale(1.0);filter: blur(3px);}
+    75% {transform: scale(1.05); filter: blur(1px);}
+    90% {transform: scale(1); filter: none;}
+}</code><pre>
+                            </details>
+                        </li>
+                        <li>
+                            <details>  <!-- example with some code in a "details" .........................   -->
+                                <summary>periodically wiggle and pop</summary>
+<pre><code>nav li:hover {
+    animation: wiggle 20s infinite linear;
+}
+@keyframes wiggle {
+    0%,1%, 2% {transform: rotateZ(3deg);}
+    0.5%, 1.5%, 2.5% {transform: rotateZ(-3deg);}
+    3.5%, 6.0%, 10% {transform: scale(1) rotateZ(0deg);}
+    4.0% {transform: scale(1.05);}
+}</code></pre>
+                            </details>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+        </main>
+        <footer>  <!-- this element is for contact details, copyright information, etc.  -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://jimmorey.com/">main page</a>
+                    </li>
+                    <li>
+                        <a href="https://polygoncraze.blogspot.com/">blog</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/theAmatour">youtube</a>
+                    </li>
+                </ul>
+            </nav>
+            <span>
+                last edited <time>August,28 2019</time>
+            </span>
+        </footer>
+    </body>
+    <script src="dynamicCSS.js"></script> <!-- this is my cheat to dynamically adding css files to this html using url parameters -->
+</html>

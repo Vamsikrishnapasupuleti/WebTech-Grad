@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+       h2 a{
+         font-size:0.5em;;
+       }
+       form {
+       	  float:left;
+          font-size:0.75em;
+       }
+       object {
+           width:80vw;
+           height:100vh;
+           border:4px double grey;
+       }
+    </style>
+    </head>
+    <body>
+        <header>
+        <h2>launch "html5.html" with style <a id="go" target="_blank"></a></h2>
+        </header>
+        <form method="post" action="/Tests/Post/">
+            <fieldset>    
+	        <legend>CSS files to include</legend>      
+	<!--<?php // this is a little ugly but...node.js is tricky to add here
+	function onlyCss($file){
+	  return(substr($file,-4) == ".css");
+	}
+	
+	$files = array_filter( scandir('.'), "onlyCss");
+	foreach ($files as &$file) {
+	  echo '<input type="checkbox" name="css" value="' . $file .'">' . $file . '<br>';      
+	}
+						  ?>-->
+		<input type="checkbox" name="css" value="dynaAnim.css">dynaAnim.css<br><input type="checkbox" name="css" value="dynaBlur.css">dynaBlur.css<br><input type="checkbox" name="css" value="dynaTrans.css">dynaTrans.css<br><input type="checkbox" name="css" value="font1.css">font1.css<br><input type="checkbox" name="css" value="font10.css">font10.css<br><input type="checkbox" name="css" value="font2.css">font2.css<br><input type="checkbox" name="css" value="font3.css">font3.css<br><input type="checkbox" name="css" value="font4.css">font4.css<br><input type="checkbox" name="css" value="font5.css">font5.css<br><input type="checkbox" name="css" value="font8.css">font8.css<br><input type="checkbox" name="css" value="fontCrazy.css">fontCrazy.css<br><input type="checkbox" name="css" value="fontFirstLet.css">fontFirstLet.css<br><input type="checkbox" name="css" value="kitchenSink.css">kitchenSink.css<br><input type="checkbox" name="css" value="layoutPortal.css">layoutPortal.css<br><input type="checkbox" name="css" value="layoutSimple.css">layoutSimple.css<br><input type="checkbox" name="css" value="playBlend.css">playBlend.css<br><input type="checkbox" name="css" value="revealTags.css">revealTags.css<br>  
+            </fieldset>
+        </form>
+        <!--button onclick="show()">Show here</button-->
+        <div id="content"></div>
+    </body>
+    <script defer>
+	const htmlPage = new URLSearchParams(document.location.search).get("page") || "html5.html";
+        // add all css files in this directory
+        function loadPage(page) {
+            document.getElementById("content").innerHTML = `<object type="text/html" data="${page}" ></object>`;
+        }
+        function show(){
+            loadPage(document.getElementById("go").text);
+        }
+        function updateName() {
+            let name = htmlPage+"?css=";
+            const csses = document.querySelectorAll("input:checked");
+            for (let item of csses) {name +=item.value+" ";};
+            name = name.trim();
+            name= name.replace(/\s/g, "%20");
+            const go = document.getElementById("go");
+            go.text= name;
+            go.setAttribute("href",name);
+            show();
+        }
+
+        let inputs = document.getElementsByTagName("input");
+        for (let item of inputs) {item.addEventListener("click", updateName);};
+        updateName();
+    </script>
+</html>
