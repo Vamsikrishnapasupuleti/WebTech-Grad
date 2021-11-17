@@ -26,8 +26,7 @@ let shuffle = () => {
 
 randomizeRatings = (terms) => {
     terms.forEach(d => d.rating = Math.floor(Math.random()*3)+1)
-    return d3.shuffle(terms)
-
+    return d3.shuffle(terms);
 }
 
 let update = (terms) =>{
