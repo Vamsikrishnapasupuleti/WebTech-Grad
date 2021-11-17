@@ -1,7 +1,11 @@
 # Vamsi Krishna Pasupuleti (vpasupul@uwo.ca)
 
 ## Project Checklist
-
+- [x] A project git
+- [x] A READ_ME.txt file with (in this order)
+  - your name and email
+  - Project Check-list
+  - a git log --all
 - [x] A server.js (nodejs) file that serves an index.html written with
 
   - that runs by “node server.js”
@@ -26,7 +30,7 @@
 - [x] Javascript arrow functions
   - use at least one
 
-- [ ] In comments, show
+- [x] In comments, show
   - links to original sources / where you found the code
     - for my files, you can just refer to them by name (eg. data4njq.html)
   - indicate how much different your code
