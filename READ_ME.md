@@ -41,7 +41,13 @@
 ## Git Log
 
 ```text
-commit dbe8a3e8cde5997c03356e1a2c17114a6fc6fb77 (HEAD -> master)
+PS C:\Vamsi\Canada\Grad Courses\Fall-2021\ECE-9065- Web Technologies\Assignments\Project_Nov30\Repository\project> git log --all                                     commit d88a0678a9f60b7d0382a73a53b7706342491c56 (HEAD -> master)
+Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
+Date:   Wed Nov 17 09:30:00 2021 +0530
+
+    added Line numbers for checklist
+
+commit dbe8a3e8cde5997c03356e1a2c17114a6fc6fb77
 Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
 Date:   Wed Nov 17 08:59:49 2021 +0530
 
