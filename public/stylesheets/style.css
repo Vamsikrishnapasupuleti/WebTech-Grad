@@ -1,0 +1,55 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+button{
+  background-color: #ff0000;
+  border-color: #007bff;
+  color: white;
+  border-radius:5px;
+  border: none;
+  cursor: pointer;
+  margin: 4px 10px;
+  font-size: 16px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover ,button:active{
+  background-color: #ff5200
+}
+
+button:focus {
+  background-color: #23272b}
+
+.grad {
+  
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  margin-bottom: 10px;
+}
+
+h1{
+  color: ivory;
+  text-align: center;
+  font-style: italic;
+}
+
+span{
+
+  font-size: large;
+  font-style: oblique;
+  margin: 10px 10px;
+}
+
+img {
+  float: left;
+  width: 200px;
+  height: 200px;
+}

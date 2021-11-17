@@ -1,0 +1,97 @@
+{ 
+    "terms":[
+        {
+            "name": "branch",
+            "description": "A branch represents an development.",
+            "url": "https://www.atlassian.com/git/tutorials/using-branches",
+            "rating": 3
+        },
+        {
+            "name": "pull",
+            "description": "Incorp changes from a remote repository into the current branch.",
+            "url": "https://git-scm.com/docs/git-pull",
+            "rating": 3
+        },
+        {
+            "name": "push",
+            "description": "Updates remote refs using local refs,sending objects necessary to complete the given refs.",
+            "url": "https://git-scm.com/docs/git-push",
+            "rating": 3
+        },
+        {
+            "name": "head",
+            "description": "Git's way of referring to the current snapshot.",
+            "url": "https://careerkarma.com/blog/what-is-a-git-head/",
+            "rating": "2"
+        },
+        {
+            "name": "checkout",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 3
+        },
+        {
+            "name": "fetch",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 3
+        },
+        {
+            "name": "fork",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 2
+        },
+        {
+            "name": "clone",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 2
+        },
+        {
+            "name": "rebase",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 3
+        },
+        {
+            "name": "stash",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 1
+        },
+        {
+            "name": "index",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 2
+        },
+        {
+            "name": "master",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 3
+        },
+        {
+            "name": "merge",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 2
+        },
+        {
+            "name": "remote",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 1
+        },
+        {
+            "name": "repository",
+            "description": "The term checkout is used for the act of switching between different versions of a target entity.",
+            "url": "https://git-scm.com/docs/git-checkout",
+            "rating": 3
+        }
+
+
+
+    ] 
+}
