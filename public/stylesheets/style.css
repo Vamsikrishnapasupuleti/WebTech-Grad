@@ -33,6 +33,7 @@ button:focus {
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
   margin-bottom: 10px;
+  border-radius: 8px;
 }
 
 h1{
