@@ -32,65 +32,57 @@ randomizeRatings = (terms) => {
 let update = (terms) =>{
 
     currentTerms=terms.slice(0,5);
+    console.log(currentTerms);
 
     svg.selectAll("g,circle")
     .data(currentTerms, d => d.name)
     .join(
         enter => {
-            enter
-            .append("g")
-            .attr("transform", (d,i) => `translate(${(i+1)*100+(100*i)},150)`)
+            //console.log(enter);
+            let group = enter.append('g')
+            .attr("transform", (d,i) => `translate(${(i+1)*100+(100*i)},150)`);
+
+            group
             .append("circle")
             .attr("r", d => d.rating*30)
             .attr("stroke", "black")
             .attr("fill", "blue")
             .transition().duration(1000)
+
+            group
+            .append("text")
+            .attr("dx", (d)=> -20)
+            .style("fill",'white')
+            .text(d=> d.name)
+            .transition().duration(1000)
         },
         update => {
-            update
-            .attr("transform", (d,i) => `translate(${(i+1)*120+(100*i)},150)`)
+            //console.log(update);
+            let group = update
+            .attr("transform", (d,i) => `translate(${(i+1)*120+(100*i)},300)`);
+
+            group
             .append("circle")
-            .attr("r", d => d.rating*30)
+            .attr("r", d => d.rating*25)
             .attr("stroke", "black")
             .attr("fill", "green")
             .transition().duration(1000)
+
+            group
+            .append("text")
+            .attr("dx", (d)=> -20)
+            .style("fill",'white')
+            .text(d=> d.name)
+            .transition().duration(1000)
         },  
         exit => {
+            //console.log(exit);
             exit
             .transition().duration(700)
-            .attr("transform", (d,i) => `translate(${(i+1)*50+(100*i)},150)`)
             .attr("fill", "red")
-            .remove()
-        }             
-    )
+            .remove() 
 
-    svg.selectAll("g")
-    .data(currentTerms, d => d.name)
-    .join(
-        enter => 
-            enter
-            .append("g")
-            .attr("transform", (d,i) => `translate(${(i+1)*100+(100*i)},150)`)
-            .append("text")
-            .attr("dx", (d)=> -20)
-            .style("fill",'white')
-            //.style("stroke", "white")
-            .text(d=> d.name)
-            .transition().duration(1000),
-        update => 
-            update
-            .attr("transform", (d,i) => `translate(${(i+1)*120+(100*i)},150)`)
-            .append("text")
-            .attr("dx", (d)=> -20)
-            .style("fill",'white')
-            //.style("stroke", "white")
-            .text(d=> d.name)
-            .transition().duration(1000),
-        exit =>
-            exit
-            .transition().duration(700)
-            .attr("transform", (d,i) => `translate(${(i+1)*50+(100*i)},150)`)
-            .remove()     
+        }             
     )
     
 }
