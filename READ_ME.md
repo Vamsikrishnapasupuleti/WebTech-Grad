@@ -41,8 +41,14 @@
 ## Git Log
 
 ```text
-PS C:\Vamsi\Canada\Grad Courses\Fall-2021\ECE-9065- Web Technologies\Assignments\Project_Nov30\Repository\project> git log --all 
-commit 6134e659fef323d627baf2c24a2b5216b4d8dd69 (HEAD -> master)
+PS C:\Vamsi\Canada\Grad Courses\Fall-2021\ECE-9065- Web Technologies\Assignments\Project_Nov30\Repository\project> git log --all
+commit 6a369082853fc481d152329211e3bb2a69e3f01a (HEAD -> master)
+Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
+Date:   Tue Nov 23 20:17:58 2021 +0530
+
+    added git bundle file
+
+commit 6134e659fef323d627baf2c24a2b5216b4d8dd69
 Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
 Date:   Tue Nov 23 20:11:05 2021 +0530
 
