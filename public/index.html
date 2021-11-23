@@ -7,10 +7,12 @@
     <link rel='stylesheet' type='text/css' media='screen' href='stylesheets/style.css'> 
     
 </head>
+    <!-- below div contains gradient background and a image of d3 logo and h1 tag  -->
     <div class="grad"><img src="images/d3js.png" alt="D3 logo"/> <h1>Git terms Transition using D3!</h1></div>
 
+    <!-- below code is for creating svg without d3 and it contains path. circle, text ,rectangle  -->
     <svg height="450" width="1000">
-        <path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="3" fill="none" />
+          <path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="3" fill="none" />
           <path id="lineBC" d="M 250 50 l 150 300" stroke="red" stroke-width="3" fill="none" />
           <path d="M 175 200 l 150 0" stroke="green" stroke-width="3" fill="none" />
           <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
@@ -29,10 +31,18 @@
           <rect width="300" height="100" x="500" y="150" style="fill:blue;stroke-width:3;stroke:black" />
         </svg>
     </br>
+
+    <!--the two spans contains unicode emojis -->
     <span> I Love Coding with D3.js &#128151!!</span></br>
-    <span> Click below &#x1F447 to see d3 transitions using enter-->update-->exit</span></br>
+    <span> Click below &#x1F447 to see d3 transitions using join and enter + update + exit</span></br>
+    
+    <!--Button element to perform d3 join operations-->
     <button onclick='shuffle();'>Shuffle</button>
+
+    <!--svg element for d3 join operations-->
     <svg id="terms"></svg>
+
+    <!--below div element contains unordered list with anchor tags with links (references to the above designed data)-->
     <div id='comments'>
         <h2>References and Comments</h2>
         <ul>
@@ -44,6 +54,7 @@
         </ul>
     </div>
 
+    <!--below lines used to separate the js file which contains d3 contents -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src='javascripts/script.js'></script>
 </body>

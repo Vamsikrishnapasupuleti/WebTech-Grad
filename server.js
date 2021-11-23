@@ -1,3 +1,4 @@
+// import required libraries
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -26,6 +27,7 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+//routers
 app.use('/index', indexRouter);
 app.use('/json', jsonRouter);
 

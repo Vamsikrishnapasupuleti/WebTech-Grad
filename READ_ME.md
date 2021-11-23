@@ -41,7 +41,25 @@
 ## Git Log
 
 ```text
-PS C:\Vamsi\Canada\Grad Courses\Fall-2021\ECE-9065- Web Technologies\Assignments\Project_Nov30\Repository\project> git log --all                                     commit d88a0678a9f60b7d0382a73a53b7706342491c56 (HEAD -> master)
+PS C:\Vamsi\Canada\Grad Courses\Fall-2021\ECE-9065- Web Technologies\Assignments\Project_Nov30\Repository\project> git log --all                                     commit 53b2c92b8fb29fe518124fc09ef3e0d285fd9145 (HEAD -> master)
+Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
+Date:   Tue Nov 23 10:30:59 2021 +0530
+
+    fixed overlapping issue using d3 join
+
+commit b2673bdbe4c230442c99cc24fea3f8fcb33d2c70
+Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
+Date:   Fri Nov 19 22:48:37 2021 +0530
+
+    add border radius for gradient div
+
+commit e782ed5a462b8885cc3142bcc8ca34d1631c0e2a
+Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
+Date:   Wed Nov 17 09:31:19 2021 +0530
+
+    added git log to READ_ME.md file
+
+commit d88a0678a9f60b7d0382a73a53b7706342491c56
 Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
 Date:   Wed Nov 17 09:30:00 2021 +0530
 

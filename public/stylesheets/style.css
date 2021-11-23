@@ -3,10 +3,12 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+/* anchor tag style*/
 a {
   color: #00B7FF;
 }
 
+/* button styles */
 button{
   background-color: #ff0000;
   border-color: #007bff;
@@ -21,13 +23,16 @@ button{
   text-decoration: none;
 }
 
+/* Hover, Active */
 button:hover ,button:active{
   background-color: #ff5200
 }
 
+/* focus */
 button:focus {
   background-color: #23272b}
 
+ /* gradient background */
 .grad {
   
   background-color: red; /* For browsers that do not support gradients */
@@ -49,6 +54,7 @@ span{
   margin: 10px 10px;
 }
 
+/* image styles*/
 img {
   float: left;
   width: 200px;
