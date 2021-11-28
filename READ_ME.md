@@ -42,7 +42,19 @@
 
 ```text
 PS C:\Vamsi\Canada\Grad Courses\Fall-2021\ECE-9065- Web Technologies\Assignments\Project_Nov30\Repository\project> git log --all
-commit 6a369082853fc481d152329211e3bb2a69e3f01a (HEAD -> master)
+commit de03c41436ce385c9365eb3ffb236b9bf4c9796a (HEAD -> master)
+Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
+Date:   Mon Nov 29 03:21:57 2021 +0530
+
+    added mouseover and mouseleave events
+
+commit 3bc5a60ab7fca4f9a82b35839ac61b6be27c9529
+Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
+Date:   Tue Nov 23 20:19:39 2021 +0530
+
+    latest log addded to readme fil
+
+commit 6a369082853fc481d152329211e3bb2a69e3f01a
 Author: Vamsi Pasupuleti <vpasupul@uwo.ca>
 Date:   Tue Nov 23 20:17:58 2021 +0530
 

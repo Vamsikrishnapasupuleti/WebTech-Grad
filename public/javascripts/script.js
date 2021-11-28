@@ -66,7 +66,7 @@ let update = (terms) =>{
             })
             .on('mouseover', function() {
                 d3.select(this)
-                    .attr('fill', '#330000')
+                    .attr('fill', '#330066')
             })
             .transition().duration(1000)
             
@@ -76,6 +76,21 @@ let update = (terms) =>{
             .attr("dx", (d)=> -20)
             .style("fill",'white')
             .text(d=> d.name)
+            .on('mouseleave', function() {
+                d3.select(this)
+                .attr("transform",(d,i) => `translate(0,0)`)
+                .style("fill","white")
+                .attr("stroke","none")
+                .attr("font-size","none")
+            })
+            .on('mouseover', function() {
+                d3.select(this)
+                .attr("transform","translate(-70, -70)")
+                .attr("transition","all 0.3s ease-in-out")
+                .style("fill","black")
+                .attr("stroke","black")
+                .attr("font-size","50")
+            })
             .transition().duration(1000)
         },
         update => {
@@ -103,6 +118,21 @@ let update = (terms) =>{
             .attr("dx", (d)=> -20)
             .style("fill",'white')
             .text(d=> d.name)
+            .on('mouseleave', function() {
+                d3.select(this)
+                .attr("transform",(d,i) => `translate(0,0)`)
+                .style("fill","white")
+                .attr("stroke","none")
+                .attr("font-size","none")
+            })
+            .on('mouseover', function() {
+                d3.select(this)
+                .attr("transform","translate(-70, -70)")
+                .attr("transition","all 0.3s ease-in-out")
+                .style("fill","black")
+                .attr("stroke","black")
+                .attr("font-size","50")
+            })
             .transition().duration(1000)
         },  
         exit => {
