@@ -1,5 +1,6 @@
 // select element with id terms and set the attributes width and height
-const svg = d3.select('#terms')
+const svg 
+= d3.select('#terms')
               .attr('width', 1600)
               .attr('height', 500)
               
@@ -59,7 +60,16 @@ let update = (terms) =>{
             .attr("r", d => d.rating*30)
             .attr("stroke", "black")
             .attr("fill", "blue")
+            .on('mouseleave', function() {
+                d3.select(this)
+                .attr('fill', 'blue')
+            })
+            .on('mouseover', function() {
+                d3.select(this)
+                    .attr('fill', '#330000')
+            })
             .transition().duration(1000)
+            
 
             group
             .append("text")
@@ -78,6 +88,14 @@ let update = (terms) =>{
             .attr("r", d => d.rating*25)
             .attr("stroke", "black")
             .attr("fill", "green")
+            .on('mouseleave', function() {
+                d3.select(this)
+                .attr('fill', 'green')
+            })
+            .on('mouseover', function() {
+                d3.select(this)
+                    .attr('fill', '#990066')
+            })
             .transition().duration(1000)
 
             group
@@ -92,11 +110,10 @@ let update = (terms) =>{
             exit
             //.attr("transform", (d,i) => `translate(${(i+1)*50+(100*i)},150)`)
             .transition().duration(700)
-            .attr("fill", "red")
+            .style("fill", "red")
             .remove() 
 
         }             
     )
-    
 }
           
